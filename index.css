@@ -896,8 +896,10 @@ body {
 }
 
 /* Social Icons */
-.footer-social {
+..footer-social {
   margin: 20px 0;
+  position: relative;
+  z-index: 100;
 }
 
 .footer-social a {
@@ -906,13 +908,16 @@ body {
   margin: 0 12px;
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
+  position: relative;
+  z-index: 101;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 .footer-social a:hover {
-  transform: scale(1.3);
-  color: #fff;
+  transform: scale(1.2);
+  color: #a259ff;
 }
-
 /* Copyright */
 .footer-copy {
   font-size: 14px;
